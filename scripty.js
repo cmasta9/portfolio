@@ -17,6 +17,22 @@ darkButt.onclick = () => {
     }
 }
 
+email.onmouseover = () => {
+    let hoverCont = document.createElement('div');
+    hoverCont.classList.add('hoverCont');
+    hoverCont.id = 'hoverCont';
+    hoverCont.innerText = 'cmasta99@gmail.com';
+    email.appendChild(hoverCont);
+    hoverCont.style.top = email.style.top;
+    hoverCont.style.left = Number(email.style.left) - hoverCont.offsetWidth/3 + 'px';
+}
+
+email.onmouseout = () => {
+    if(document.getElementById('hoverCont')){
+        document.getElementById('hoverCont').remove();
+    }
+}
+
 nam.onmouseover = () => {
     nam.innerText = 'Cory C(a)masta';
 }
