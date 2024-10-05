@@ -157,6 +157,22 @@ body.light .container{
     justify-content: center;
 }
 
+.hoverCont{
+    position:absolute;
+    width:fit-content;
+    z-index: 3;
+    padding: 12px;
+    border-radius: 22px;
+}
+
+body.light .hoverCont{
+    position:absolute;
+    width:fit-content;
+    z-index: 3;
+    padding: 12px;
+    border-radius: 22px;
+}
+
 .mission{
     width: auto;
     text-align: center;
